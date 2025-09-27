@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "ChatGPT Tab Title: Chat Only",
+  "version": "1.0.0",
+  "description": "Show only the chat title in the ChatGPT tab.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.openai.com/*",
+        "https://chatgpt.com/*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
